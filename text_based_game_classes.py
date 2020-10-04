@@ -6,7 +6,7 @@ class Enemy:
         self.level = level
     
     def __str__(self):
-        return f'A(n) {self.name} at level {self.level}'
+        return f'A(n) {self.__class__.__name__} at level {self.level}'
     
     def defense(self):
         return self.level * random.randint(1, 12)
